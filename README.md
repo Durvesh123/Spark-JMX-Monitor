@@ -70,7 +70,7 @@ This script will:
 
 Inside Spark shell, load your Scala file:
 ```bash
-:load src/MySparkApp.scala
+:load ../src/MySparkApp.scala
 ```
 You should see:
 ```bash
