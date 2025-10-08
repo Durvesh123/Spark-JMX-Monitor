@@ -1,5 +1,11 @@
 # 🧠 Spark JMX Monitoring Lab (CLI Project)
 
+![Scala](https://img.shields.io/badge/Language-Scala-blue)
+![Apache Spark](https://img.shields.io/badge/Spark-4.0-orange)
+![Java](https://img.shields.io/badge/Java-17-brightgreen)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
+![GitHub last commit](https://img.shields.io/github/last-commit/Durvesh123/Spark-JMX-Monitor)
+
 This project demonstrates how to **enable, connect, and fetch JMX metrics** from a running **Apache Spark** application using **JMXTerm** on a **Linux command-line environment**.  
 It provides an end-to-end setup to help understand **JMX-based JVM metric monitoring** for Spark processes.
 
@@ -15,7 +21,15 @@ spark-jmx-lab/
 │ └── MySparkApp.scala # Spark demo program for monitoring
 └── jmxterm.jar # JMXTerm client (auto-downloaded if missing)
 ```
+---
+## 🖼️ Architecture / Workflow Diagram
 
+![Spark JMX Monitoring Workflow](output/architecture_diagram.jpg)
+This diagram shows the workflow of the Spark JMX Monitoring project:
+- User Terminal launches Spark or scripts
+- Spark app runs in JVM with JMX enabled
+- JMXTerm connects to JVM to fetch metrics
+- Metrics are displayed to the user
 ---
 
 ## ⚙️ Prerequisites
@@ -103,13 +117,13 @@ cd scripts
 ./check_jmx_metrics.sh
 ```
 ### Sample JVM Metrics (Before Spark)
-![JVM Metrics Before](outputs/JVM_Metrics_Before.PNG)
+![JVM Metrics Before](output/JVM_Metrics_Before.PNG)
 
 ### Sample JVM Metrics (After Spark)
-![JVM Metrics After](outputs/JVM_Metrics_After.PNG)
+![JVM Metrics After](output/JVM_Metrics_After.PNG)
 
 ### Spark Shell Output
-![Spark Shell Output](outputs/Spark_Shell_Output.PNG)
+![Spark Shell Output](output/Spark_Shell_Output.PNG)
 
 ## 🧰 Useful Commands
 
